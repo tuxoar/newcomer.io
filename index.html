@@ -53,8 +53,9 @@
   header.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(150%) blur(10px);
     background:rgba(10,14,20,.72);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .brand{font-family:var(--mono);font-weight:700;letter-spacing:.5px;font-size:15px}
-  .brand .br{color:var(--accent)}
+  .brand{font-family:var(--mono);font-weight:700;letter-spacing:1px;font-size:15px}
+  .brand span:nth-child(4n+1),.brand span:nth-child(4n+2){color:var(--accent)}
+  .brand span:nth-child(4n+3),.brand span:nth-child(4n){color:var(--accent-2)}
   nav.links{display:flex;gap:26px;font-size:14px;font-weight:500}
   nav.links a{color:var(--muted);transition:color .2s}
   nav.links a:hover{color:var(--text)}
@@ -150,7 +151,7 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="brand">shaun<span class="br">.</span>newcomer<span class="br">()</span></a>
+    <a href="#top" class="brand" title="Shaun" aria-label="Shaun"><span>0</span><span>x</span><span>7</span><span>3</span><span>6</span><span>8</span><span>6</span><span>1</span><span>7</span><span>5</span><span>6</span><span>e</span></a>
     <nav class="links">
       <a href="#about">about</a>
       <a href="#focus">focus</a>
